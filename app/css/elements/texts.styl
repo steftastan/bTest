@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Styles applied to all text elements in the application
+   ========================================================================== */
+
+
+
+
+/* Global styles
+   ========================================================================== */
+
+/* Defaults state for text tags */
+p, span, a
+ font-family: 'Roboto', sans-serif
+
+a
+  color: $white
+  text-decoration: none
+
+/* Learn more link found in the grid section */
+.grid_learnMore
+  display: block
+  color: $light_blue
+  font-size: $grid_text
+  text-align: center
+  text-decoration: underline
+
+
+/* Specific modifiers for text elements */
+.streamline_description
+  padding-bottom: 30px
+  color: $ivory_white
+
+/* All texts that need to be centered */
+.tools_description,
+.grid_description,
+.grid_learnMore,
+.text_footer
+  text-align: center
+
+/* Changing color texts */
+.tools_description,
+.grid_description,
+.whiteBox_description,
+.whiteBox_legal
+  color: $middle_gray
+
+.grid_description
+  margin-bottom: 35px
+  font-size: $grid_text
+
+.whiteBox_description
+  font-size: $grid_text
+
+.whiteBox_legal,
+.text_footer
+  font-size: $legal_text
+
+
+
+
+
+
+
+
+/* Mobile
+   ========================================================================== */
+
++mobile()
+  p, span
+    line-height: ($main_text_mobile + 4px)
+    font-size: $main_text_mobile
+    font-weight: $light_font
+
+  a
+    font-size: $link_text
+
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+  p, span
+    line-height: ($main_text_desktop + 5px)
+    font-weight: $light_font
+    font-size: $main_text_desktop
+
+  a
+    font-size: $link_text
+    text-decoration: none
+
+
+  /* Specific modifiers for text elements */
+  .streamline_description
+    padding-right: 150px
+
+  .tools_description
+    padding: 0 200px
+
+  .topNav_link
+    letter-spacing: 1px
+    text-transform: uppercase

@@ -1,0 +1,49 @@
+
+/* ==========================================================================
+   BEHAVIOR INTERACTIVE TECH TEST
+   ==========================================================================
+
+    * Idiomatic CSS reference: https://github.com/necolas/idiomatic-css
+    *
+    * This project's CSS architecture borrows from ITCSS.
+    * In this file we are importing all files that make up our architecture
+    * and compile them into CSS that will be interpreted by our browser.
+    *
+    * The templating language used for this project is Stylus, a Sass-like
+    * alternative.
+    *
+    * All the different sections of the website are styled in hierarchical
+    * order, from the most general, to most specific.
+    *
+    * Also, the contents of each style sheet have been developed following a
+    * mobile-first approach.
+    */
+
+/* Settings */
+@import "settings/variables"
+@import "settings/fonts"
+
+/* Tools */
+@import "tools/media-queries"
+@import "tools/images"
+@import "tools/buttons"
+@import "tools/boxes"
+
+/* Generic */
+@import "generic/reset"
+@import "generic/box-sizing"
+
+/* Elements */
+@import "elements/titles"
+@import "elements/texts"
+
+/* Components */
+@import "components/top-nav"
+@import "components/image-box"
+@import "components/video-player"
+@import "components/buttons"
+@import "components/grid"
+@import "components/white-box"
+
+/* Utilities */
+@import "utilities/margins"

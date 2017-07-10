@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Grid area that details the site's features
+   ========================================================================== */
+
+/* Global styles
+   ========================================================================== */
+
+/* Grid logos */
+.grid_logo
+  margin-bottom: 45px
+  button(100%, 50px, 0, $transparent, $middle_gray, 0)
+
+.grid_logo_envelope:before
+  buttonIcon('\f003', 50px)
+
+.grid_logo_diamond:before
+    buttonIcon('\f219', 50px)
+
+.grid_logo_cubes:before
+    buttonIcon('\f1b3', 50px)
+
+/* An individual grid box*/
+.grid_item
+  position: relative
+  box(100%, auto, 15px, 25px 50px 35px, $transparent, 10px, 1px solid $light_gray)
+
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+
+  /* Grid wrapper element to allow flexbox to work */
+  .grid_wrapper
+    box-sizing: border-box
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-flex: 0
+    -ms-flex: 0 1 auto
+    flex: 0 1 auto
+    -webkit-box-orient: horizontal
+    -webkit-box-direction: normal
+    -ms-flex-direction: row
+    flex-direction: row
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    width: 100%
+
+  /* Individual grid items */
+  .grid_item
+    -webkit-box-flex: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    -ms-flex-preferred-size: 0
+    flex-basis: 0

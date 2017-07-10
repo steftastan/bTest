@@ -1,0 +1,45 @@
+/* ==========================================================================
+   MIXIN FILE FOR BUTTON GENERATION
+   ========================================================================== */
+
+
+/*
+ * Generates a button from a parameter list.
+ *
+ * @param $button_width - The button's width
+ * @param $button_height - The button's height
+ * @param $button_padding - The button's padding
+ * @param $button_color - The button's color
+ * @param $button_text - The button's text
+ * @param $button_border-radius - The button's border radius
+ * @param $button_border - The button's border, default none
+ */
+
+button($button_width, $button_height, $button_padding, $button_color, $button_text, $button_radius, $button_border = none, $font_weight = $regular_font)
+    display: inline-block
+    width: $button_width
+    height: $button_height
+    box-sizing: border-box
+    padding: $button_padding
+    border: $button_border
+    border-radius: $button_radius
+    background: $button_color
+    color: $button_text
+    text-align: center
+    font-weight: $font_weight
+
+/*
+ * Applies a Font Awesome icon directly into an element's content value.
+ *
+ * Content value reference available here: http://astronautweb.co/snippet/font-awesome/
+ *
+ * @param $glyph - String indicating the content value for the icon.
+ * @param $size - Size in pixels of the icon.
+ */
+buttonIcon($glyph, $size)
+  content: $glyph
+  font-family: 'FontAwesome'
+  font-size: $size
+  font-style: normal
+  font-weight: normal
+  text-decoration: inherit

@@ -1,0 +1,150 @@
+
+/* ==========================================================================
+   Top Navigation - Specific styles for the logo, links and buttons.
+   ========================================================================== */
+
+/* Global styles
+   ========================================================================== */
+
+.topNav_logo
+  bgImage('../images/logo.png', no-repeat, cover)
+
+
+
+
+/* Mobile
+   ========================================================================== */
+
++mobile()
+
+  /* Top nav styles */
+  .topNav_wrapper
+    position: fixed
+    z-index 9999
+    background: $ivory_white
+
+
+  /* Logo */
+  .topNav_logo_container
+    margin: 3px 0 0 15px
+    color: $ivory_white
+    font-size: 5px
+
+  .topNav_logo
+    width: 50px
+    height: 42px
+
+
+  /* Buttons look the same so we'll share these styles */
+  .topNav_burger,
+  .topNav_shoppingCart
+    button($header_height_mobile, $header_height_mobile, 22px, $ivory_white, $charcoal, 0)
+    position: fixed
+    top: 0
+    z-index: 999
+    -webkit-transition: left 0.1s ease-in
+    transition: left 0.1s ease-in
+    cursor: pointer
+
+  /* Shopping cart (try and buy) */
+  .topNav_shoppingCart:before
+    buttonIcon('\f07a', 18px)
+
+  .topNav_shoppingCart
+    right: $header_height_mobile
+
+
+  /* Burger menu */
+  .topNav_burger:before
+    buttonIcon('\f0c9', 18px)
+
+  .topNav_burger
+    right 0
+
+
+  /* Sidebar */
+  .topNav_linkList,
+  .topNav_buyList
+    position: fixed
+    z-index: 999
+    top: $header_height_mobile
+    right: -100%
+    overflow-x: hidden
+    overflow-y: auto
+    width: 100%
+    height: auto
+    background-color: $ivory_white
+    color: $charcoal
+    transition: right 0.1s ease-out
+    -webkit-transition: right 0.1s ease-out
+
+  .topNav_link
+    button(100%, 45px, 10px, $ivory_white, $charcoal, 0)
+
+  /* Open state for sidebar */
+  .linkList--open
+      right: 0
+
+
+
+
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+
+  /* Logo */
+  .topNav_logo_container
+    display: inline-block
+    vertical-align: middle
+    color: $transparent
+    font-size: 5px
+
+  .topNav_logo
+    width: 60px
+    height: 50px
+
+
+  /* Hide these on desktop */
+  .topNav_burger,
+  .topNav_shoppingCart
+    display: none
+
+
+  /* Links */
+  .topNav_linkList,
+  .topNav_buyList
+    display: inline-block
+    top: $header_height_desktop
+    height: auto
+    color: $charcoal
+
+  .topNav_linkList
+    width: 620px
+    margin-left: 125px
+
+  .topNav_buyList
+    width: 275px
+    margin: 10px 0
+    float: right
+
+  .topNav_link
+    button(auto, $header_height_desktop, 28px 10px, $transparent, $ivory_white, 0, none, $light_font)
+
+  .topNav_link:after
+    margin-left: 3px
+    buttonIcon('\f107', 10px)
+
+  .topNav_link.topNav_button--clear
+    margin-right 10px
+    button(120px, 40px, 10px, $transparent, $white, 5px, 1px solid $ivory_white, bold)
+
+  .topNav_link.topNav_button--clear:after,
+  .topNav_link.topNav_button--blue:after
+    display: none
+
+  .topNav_link.topNav_button--blue
+    button(115px, 40px, 10px, $light_blue, $white, 5px, 1px solid $light_blue, bold)

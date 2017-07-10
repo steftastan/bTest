@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Image boxes. Styles for containers with background images
+   ========================================================================== */
+
+/* Global styles
+   ========================================================================== */
+
+.imageBox_top,
+.imageBox_bottom
+  background-attachment: fixed
+
+/* Mobile
+   ========================================================================== */
+
++mobile()
+
+  .imageBox_top
+    bgImage('../images/bg_1.jpg', no-repeat, cover)
+
+  .imageBox_bottom
+    background-color: red !important
+    bgImage('../images/bg_2.jpg', no-repeat, cover)
+
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+
+  .imageBox_top
+    bgImage('../images/bg_1.jpg', no-repeat, cover)
+
+  .imageBox_bottom
+    bgImage('../images/bg_2.jpg', no-repeat, cover)

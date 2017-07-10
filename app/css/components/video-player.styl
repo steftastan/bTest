@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Video player simulated in the Streamline your workflow section.
+   ========================================================================== */
+
+/* Global styles
+   ========================================================================== */
+
+.videoPlayer_wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  bgImage('../images/video_player.jpg', no-repeat, cover)
+  height: 300px
+  border-radius: 10px
+
+
+.videoPlayer_button
+  cursor: pointer
+
+
+
+
+/* Mobile
+   ========================================================================== */
+
++mobile()
+
+  .videoPlayer_wrapper
+    max-width: 100%
+    margin: 5px 30px 0
+
+
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+
+  .videoPlayer_wrapper
+    width: 556px

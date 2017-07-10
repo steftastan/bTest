@@ -1,0 +1,115 @@
+
+/* ==========================================================================
+   BOX SIZING
+   ========================================================================== */
+
+
+
+
+ /* Global styles
+   ========================================================================== */
+
+   .box_main
+     position: relative
+     box-sizing: border-box
+     width: 100%
+     height: 100%
+
+   .box_backgroundImage
+     display: block
+     box-sizing: border-box
+     width: 100%
+     height: 100%
+
+
+   .box_content
+     width: 100%
+     height: 100%
+     margin: 0
+
+
+   .box_textOnly
+     display: block
+     box-sizing: border-box
+     width: 100%
+     height: 100%
+     padding: 25px
+
+
+
+
+/* Mobile
+  ========================================================================== */
+
++mobile()
+
+  .box_header_wrapper
+    display: block
+    box-sizing: border-box
+    width: 100%
+    height: $header_height_mobile
+
+
+  .box_streamline
+     padding: (180px + $header_height_mobile) 0 180px
+
+
+  .box_tools
+    padding: 80px 0 100px
+
+
+  .box_grid,
+  .box_white
+    padding-bottom: 85px
+
+  .box_footer
+    margin: 40px 0
+
+
+
+
+
+/* Desktop
+  ========================================================================== */
+
++desktop()
+
+  .box_header_wrapper
+    display: block
+    box-sizing: border-box
+    width: 100%
+    height: $header_height_desktop
+
+
+  .box_content
+    width: 1140px
+    margin: 0 auto
+
+
+  .box_streamline
+     padding: (180px + $header_height_mobile) 0 180px
+
+
+  .box_tools
+    padding: 115px 0 110px
+
+
+  .box_grid
+    padding-bottom: 115px
+
+
+  /* Easily helps us align its contents to the right */
+  .box_white
+    margin-bottom: 85px
+    text-align: right
+
+
+  .box_footer
+    margin-bottom: 85px
+
+
+  .box--half
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 50%

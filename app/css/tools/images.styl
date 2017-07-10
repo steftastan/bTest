@@ -1,0 +1,20 @@
+/* ==========================================================================
+   MIXIN FILE FOR ASSIGNING IMAGES TO ELEMENTS
+   ========================================================================== */
+
+
+/*
+ * Generates a button from a parameter list.
+ *
+ * @param $bg_image - The relative path to the image file
+ * @param $bg_repeat - Whether the image should tile or not
+ * @param $bg_size - How should the image adjust to the container
+ * @param $bg_color - The container's background image. Default is none.
+ * @param $bg_position - The bg's position inside the container
+ */
+bgImage($bg_image, $bg_repeat, $bg_size, $bg_color = $transparent, $bg_position = 0 0)
+  background-image: url($bg_image)
+  background-repeat: $bg_repeat
+  background-size: $bg_size
+  background-color: $bg_color
+  background-position: $bg_position

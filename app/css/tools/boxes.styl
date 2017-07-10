@@ -1,0 +1,27 @@
+/* ==========================================================================
+   MIXIN FILE FOR BOX STYLIZATION
+   ========================================================================== */
+
+
+/*
+ * Adds styles to a container element
+ *
+ * @param $box_width - The box's width
+ * @param $box_height - The box's height
+ * @param $box_padding - The box's padding
+ * @param $box_color - The box's color
+ * @param $box_text - The box's text
+ * @param $box_border-radius - The box's border radius
+ * @param $box_border - The box's border, default none
+ */
+
+box($box_width, $box_height, $box_margin, $box_padding, $box_color, $box_radius, $box_border = none)
+    display: inline-block
+    max-width: $box_width
+    height: $box_height
+    box-sizing: border-box
+    margin: $box_margin
+    padding: $box_padding
+    border: $box_border
+    border-radius: $box_radius
+    background: $box_color

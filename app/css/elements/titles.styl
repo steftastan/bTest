@@ -1,0 +1,76 @@
+
+/* ==========================================================================
+   Styles applied to all titles in the application
+   ========================================================================== */
+
+
+
+
+/* Global styles
+   ========================================================================== */
+
+h1, h2, h3, h4
+  font-family: 'Open Sans', sans-serif
+  font-weight: $light_font
+
+h2
+  color: $white
+
+
+h3, h4
+  color: $black
+  font-size: $small_section_title_mobile
+
+/* Specific modifiers for text elements */
+.streamline_title
+  padding-bottom: 35px
+
+.tools_title
+  text-align: center
+
+.grid_title
+  margin-bottom: 15px
+  font-size: $grid_title
+  text-align: center
+
+.whiteBox_title
+  margin-bottom: 30px
+  font-size: $grid_title
+
+
+
+
+/* Mobile
+   ========================================================================== */
+
++mobile()
+  h2
+    font-size: $main_section_title_mobile
+
+  h3, h4
+    font-size: $sub_section_title_mobile
+
+
+  /* Specific modifiers for text elements */
+  .tools_title
+    padding-bottom: 30px
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+  h2
+    font-size: $main_section_title_desktop
+
+  h3, h4
+    font-size: $sub_section_title_desktop
+
+
+  /* Specific modifiers for text elements */
+  .streamline_title
+    padding-right: 150px
+
+  .tools_title
+    padding-bottom: 45px

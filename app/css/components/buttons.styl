@@ -1,0 +1,58 @@
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+
+
+
+/* Global styles
+  ========================================================================== */
+
+.button_blue
+  letter-spacing: 1px
+  text-transform: uppercase
+  button(170px, auto, 10px, $light_blue, $white, 3px, none, $bold_font)
+
+
+.button_play:before
+  margin: 3px 0 0 7px
+  buttonIcon('\f04b', 20px)
+
+
+.button_play
+  display: flex !important
+  align-items: center
+  justify-content: center
+  button(65px, 65px, 0, $ivory_white, $black, 40px)
+
+
+.button_new
+  position: absolute
+  top: 15px
+  right: 15px
+  font-size: $grid_text
+  button(64px, 25px, 0, $dark_blue, $white, 40px, none, $bold_font)
+
+
+
+
+
+
+
+/* Mobile
+  ========================================================================== */
+
++mobile()
+
+  .button_clear
+    button(170px, 36px, 15px, none, $white, 3px)
+
+  .button_new
+    padding: 2px
+
+
+
+
+/* Desktop
+  ========================================================================== */

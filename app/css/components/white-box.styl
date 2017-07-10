@@ -1,0 +1,33 @@
+/* ==========================================================================
+   White text-only area
+   ========================================================================== */
+
+/* Global styles
+   ========================================================================== */
+
+
+/* An individual grid box*/
+.whiteBox
+  position: relative
+  box(100%, auto, 70px 15px 85px, 25px 15px, $white, 10px)
+
+.whiteBox_border
+  width: 30px
+  height: 1px
+  margin: 35px 0
+  border: 0
+  border-top: 1px solid $light_blue
+  padding: 0
+
+
+
+
+/* Desktop
+   ========================================================================== */
+
++desktop()
+
+  /* Reset direction of the text */
+  .whiteBox
+    text-align: left
+    box(460px, auto, 100px 0 135px, 50px 70px, $white, 10px)
