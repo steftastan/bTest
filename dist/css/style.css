@@ -201,7 +201,21 @@ table {
     margin: 0 auto;
   }
   .box_streamline {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 239px 0 180px;
+    width: 100%;
   }
   .box_tools {
     padding: 115px 0 110px;
@@ -217,10 +231,11 @@ table {
     margin-bottom: 85px;
   }
   .box--half {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
   }
 }
 /* Elements */
@@ -552,7 +567,6 @@ a {
     background-position: 0 0;
   }
   .imageBox_bottom {
-    background-color: #f00 !important;
     background-image: url("../images/bg_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
