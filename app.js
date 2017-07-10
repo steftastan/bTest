@@ -4,22 +4,19 @@ var app = express();
 var path = require('path');
 var port = 4000;
 
-// // Displays server log in the CLI
-// app.use(express.logger());
-
-// views as directory for all template files
+/* views as directory for all template files */
 app.set('views', path.join(__dirname, 'app/templates'));
-// use either jade or ejs
+
 app.set('view engine', 'jade');
 
-// instruct express to server up static assets
+/* instruct express to server up static assets */
 app.use(express.static('dist'));
 
-// set routes
+/* Set routes */
 app.get('/', function(req, res) {
   res.render('index');
 });
 
-// Set server port
+/* Set server port */
 app.listen(port);
-console.log("Server is running at => http://localhost:" + port + "/\nCTRL + C to shutdown");
+console.log("Server is running at => http://localhost:" + port + "/\nYou may go there on via your browser, or CTRL + C to shut the server down.");
